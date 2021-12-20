@@ -1,0 +1,16 @@
+
+.services-title {
+        position: relative;
+        padding-left: 40px;
+      }
+
+.services-title:before {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #c13f22;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }

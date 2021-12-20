@@ -1,0 +1,15 @@
+.gallery-title {
+        position: relative;
+        padding-left: 40px;
+      }
+
+.gallery-title:before {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #c13f22;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }

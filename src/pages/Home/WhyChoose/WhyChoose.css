@@ -1,0 +1,25 @@
+
+.chooseUs {
+        position: relative;
+        padding-left: 40px;
+      }
+
+.chooseUs:before {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #c13f22;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }
+
+.chooseImg{
+    height: 100px;
+    width: 100px;
+}
+
+.chooseTitle{
+    color: #c13f22;
+}
