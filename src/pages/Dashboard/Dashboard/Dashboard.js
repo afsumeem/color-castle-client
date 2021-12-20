@@ -89,9 +89,9 @@ const Dashboard = () => {
 
                                     <hr className="w-100 mx-auto" />
 
-                                    <Navbar.Text className="text-primary ms-5 fs-5 my-1  fw-bolder me-auto">
+                                    <Navbar.Text className="ms-5 fs-5 my-1  fw-bolder me-auto" style={{ 'color': '#c13f22' }}>
                                         <FontAwesomeIcon className=" me-2" icon={faUser} />
-                                        <span className="text-success">
+                                        <span style={{ 'color': '#c13f22' }}>
                                             {user.displayName && user.displayName}
                                         </span>
                                     </Navbar.Text>

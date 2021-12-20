@@ -23,7 +23,7 @@ const About = () => {
                     <Row>
                         <Col md={6} sm={12} sx={12}>
                             <h4 className='services-title'>Who We Are</h4>
-                            <p className='ms-5 mt-4'> <span className='fw-bold fs-5'>Color Castle</span> bring your home to your dream Colors. We bring your home to your dream Colors.We bring your home to your dream Colors.We bring your home to your dream Colors!We bring your home to your dream Colors! We bring your home to your dream Colors! <br />We bring your home to your dream Colors. We bring your home to your dream Colors.We bring your home to your dream Colors.We bring your home to your dream Colors!We bring your home to your dream Colors! We bring your home to your dream Colors!</p>
+                            <p className='ms-5 mt-4'> <span className='fw-bold fs-5'>Color Castle</span> bring your home to your dream Colors. We bring your home to your dream Colors.We bring your home to your dream Colors.We bring your home to your dream Colors!We bring your home to your dream Colors! We bring to your dream Colors!We bring your home to your dream Colors! We bring yo your home to your dream Colors! <br />We bring your home to your dream Colors. We bring your home to your dream Colors.We bring your home to your dream Colors.We bring your home to your dream Colors!We bring your home to your dream Colors! We bring your home to your dream Colors!</p>
                         </Col>
                         <Col md={6} sm={12} sx={12}>
                             <img src={wallpaper} className='img-fluid h-100 w-100' alt="" />

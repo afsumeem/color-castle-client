@@ -1,5 +1,3 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
@@ -13,7 +11,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
 
-        axios.post('http://localhost:5000/colorCastleReviews', data)
+        axios.post('https://stormy-woodland-90777.herokuapp.com/colorCastleReviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Review Added successfully");
@@ -22,45 +20,39 @@ const AddReview = () => {
             })
     };
     return (
-        <div>
-
+        <div className="d-flex justify-content-center flex-column">
             {/* add review title */}
 
-            <h3 className="pt-3 pb-1 text-uppercase ms-5 ps-5">Your Feedback means a Lot!!</h3>
+            <h3 className="pt-3 text-uppercase text-center">Your Feedback means a Lot!!</h3>
+
+            {/* Add review form */}
+            <form className="pt-3 pb-5" onSubmit={handleSubmit(onSubmit)}>
+
+                <input className=" m-2 w-50 px-4 py-2  mx-auto d-block" value={user.displayName} {...register("name", { required: true })} />
+
+                <input className="m-2 w-50 px-4 py-2  mx-auto d-block" placeholder="Image URL"{...register("picture", { required: true })} />
+
+                <input className="m-2 w-50 px-4 py-2  mx-auto d-block" placeholder="Designation"{...register("designation", { required: true })} />
+
+                <input className="m-2 w-50 px-4 py-2  mx-auto d-block" placeholder="Your Address"{...register("address", { required: true })} />
+
+                <input className="m-2 w-50 px-4 py-2 mx-auto d-block" placeholder="Write your review"{...register("desc", { required: true })} />
 
 
-            <div className="d-flex justify-content-center">
+                <input
+                    type="number"
+                    placeholder="Rate your experience out of 5"
+                    className="m-2 w-50 px-4 py-2 mx-auto d-block"
+                    {...register('rating', {
+                        max: { value: 5 }
+                    })}
+                />
 
-                {/* Add review form */}
-                <form className="pt-3 pb-5 mx-auto d-block" onSubmit={handleSubmit(onSubmit)}>
+                {/* submit button */}
+                < input className="m-2 btn text-white w-50 mx-auto d-block" style={{ 'backgroundColor': '#c13f22' }} type="submit" value="Add Review" />
 
-                    <input className=" m-2 w-50 px-4 py-2" value={user.displayName} {...register("name", { required: true })} />
-
-                    <input className="m-2 w-50 px-4 py-2" placeholder="Image URL"{...register("picture", { required: true })} />
-
-                    <input className="m-2 w-50 px-4 py-2" placeholder="Designation"{...register("designation", { required: true })} />
-                    <br />
-
-                    <input className="m-2 w-50 px-4 py-2" placeholder="Your Address"{...register("address", { required: true })} />
-
-                    <input className="m-2 w-50 px-4 py-2" placeholder="Write your review"{...register("desc", { required: true })} />
-                    <br />
-
-                    <input
-                        type="number"
-                        placeholder="Rate your experience out of 5"
-                        className="m-2 w-50 px-4 py-2"
-                        {...register('rating', {
-                            max: { value: 5 }
-                        })}
-                    />
-
-                    {/* submit button */}
-                    < input className=" m-3 btn btn-success w-50" type="submit" value="Add Review" />
-
-                </form>
-            </div>
-        </div >
+            </form>
+        </div>
     );
 };
 

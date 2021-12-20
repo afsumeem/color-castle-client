@@ -11,18 +11,18 @@ const Banner = () => {
 
         <div className='mt-5 banner' style={{ "background": "linear-gradient(to right, #dae2f8, #d6a4a4)" }}>
             <Row className='m-0'>
-                <Col md={6} className='d-flex ps-5 flex-column justify-content-center'>
-                    <h5 className='banner-title'>BEST IN-COUNTRY</h5>
+                <Col md={6} className='d-flex  flex-column justify-content-center'>
+                    <h5 className='banner-title mt-5'>BEST IN-COUNTRY</h5>
 
                     <h1 className='my-4'>Bring your home to lively <span style={{ "color": "#c13f22" }}>Colors!</span></h1>
                     <h6 className='my-4'>We bring your home to your dream Colors. We bring your home to your dream Colors!We bring your home to your dream Colors! We bring your home to your dream Colors!</h6>
-                    <NavLink to='/service'>
-                        <Button variant='none' style={{ 'border': '2px solid #c13f22' }} className='w-75 mx-auto py-2 mt-4'>COLOR ME</Button>
+                    <NavLink to='/service' className="text-decoration-none">
+                        <Button variant='none' style={{ 'border': '2px solid #c13f22' }} className='w-100 mx-auto  d-block py-2 mt-4 banner-btn fw-bold fs-5'>COLOR ME</Button>
                     </NavLink>
 
                 </Col>
                 <Col md={6} className='mt-5'>
-                    <img src={banner} className='ps-5' alt="" />
+                    <img src={banner} className=' img-fluid mx-auto d-block' alt="" />
                 </Col>
             </Row>
 

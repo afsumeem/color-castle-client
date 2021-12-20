@@ -13,7 +13,7 @@ const MyOrder = ({ myOrder }) => {
     // handle delete order
 
     const handleDeleteOrder = id => {
-        const url = `http://localhost:5000/colorCastleOrders/${id}`
+        const url = `https://stormy-woodland-90777.herokuapp.com/colorCastleOrders/${id}`
 
         fetch(url, {
             method: 'DELETE'

@@ -20,7 +20,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/colorCastleServices/${id}`)
+        fetch(`https://stormy-woodland-90777.herokuapp.com/colorCastleServices/${id}`)
             .then(res => res.json())
             .then(data => setDetails(data))
     }, []);
@@ -28,7 +28,7 @@ const Details = () => {
     // handle submit
     const onSubmit = data => {
 
-        axios.post('http://localhost:5000/colorCastleOrders', data)
+        axios.post('https://stormy-woodland-90777.herokuapp.com/colorCastleOrders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Service Booked Successfully!!");

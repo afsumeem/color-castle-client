@@ -9,7 +9,7 @@ const ManageProducts = () => {
     // fetch all brands from api
     useEffect(() => {
 
-        fetch('http://localhost:5000/colorCastleServices')
+        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleServices')
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, []);

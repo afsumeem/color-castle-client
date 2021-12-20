@@ -16,7 +16,7 @@ const ManageProduct = ({ manage }) => {
 
     //delete product
     const handleDeleteProduct = id => {
-        const url = `http://localhost:5000/colorCastleServices/${id}`
+        const url = `https://stormy-woodland-90777.herokuapp.com/colorCastleServices/${id}`
 
         fetch(url, {
             method: 'DELETE'

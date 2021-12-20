@@ -9,7 +9,7 @@ const ManageAllOrders = () => {
     // fetch all orders from api
 
     useEffect(() => {
-        fetch('http://localhost:5000/colorCastleOrders')
+        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, []);
