@@ -4,7 +4,8 @@ import React from 'react';
 import { Alert, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { NavLink, Outlet } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import logo from '../../../images/logo.png'
+import logo from '../../../images/logo.png';
+import './Dashboard.css'
 
 const Dashboard = () => {
 

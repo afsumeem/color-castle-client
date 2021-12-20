@@ -6,7 +6,9 @@ const AllService = ({ allService }) => {
     const { _id, name, picture1, time, phone, price, desc, image } = allService;
     return (
         <div className='mb-5'>
-            <img src={`data:image/png;base64,${image}`} alt="" className='img-fluid w-100' style={{ 'height': '200px' }} />
+            {/* <img src={`data:image/png;base64,${image}`} alt="" className='img-fluid w-100' style={{ 'height': '200px' }} /> */}
+
+            <img src={picture1} alt="" className='img-fluid w-100' style={{ 'height': '200px' }} />
 
             <div className='bg-white'>
                 <div className='p-3'>

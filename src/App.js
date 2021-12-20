@@ -34,7 +34,7 @@ function App() {
             <Details />
           </PrivateRoute>} />
 
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
 
           <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}>
 

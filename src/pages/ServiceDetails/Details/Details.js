@@ -65,9 +65,14 @@ const Details = () => {
                     </Col>
 
                     <Col md={6}>
-                        <img src={`data:image/png;base64,${details.image}`} className='ms-5' style={{ 'height': '250px', 'width': '300px' }} alt="" />
+                        {/* <img src={`data:image/png;base64,${details.image}`} className='ms-5' style={{ 'height': '250px', 'width': '300px' }} alt="" />
                         <br />
                         <img src={`data:image/png;base64,${details.image2}`} style={{ 'height': '250px', 'width': '300px', 'marginTop': '-100px', 'marginLeft': '180px' }} alt="" />
+                     */}
+
+                        <img src={details.picture1} className='ms-5' style={{ 'height': '250px', 'width': '300px' }} alt="" />
+                        <br />
+                        <img src={details.picture2} style={{ 'height': '250px', 'width': '300px', 'marginTop': '-100px', 'marginLeft': '180px' }} alt="" />
                     </Col>
                 </Row>
             </Container>

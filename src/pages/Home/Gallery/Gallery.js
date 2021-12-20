@@ -13,23 +13,25 @@ const Gallery = () => {
         <Container fluid className='mt-5'>
             <h4 className='gallery-title mb-5  ms-5'>Gallery</h4>
             <Row>
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'>
-                    <img src={image1} className='img-fluid galleryImage' alt="galleryImg" />
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'>
+                    <img src={image1} className='img-fluid' alt="galleryImg" />
                 </Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image2} className='img-fluid galleryImage' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'>
+                    <img src={image2} className='img-fluid' alt="galleryImg" />
+                </Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image3} className='img-fluid galleryImage h-100' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'><img src={image3} className='img-fluid h-100' alt="galleryImg" /></Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image4} className='img-fluid galleryImage' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'><img src={image4} className='img-fluid' alt="galleryImg" /></Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image5} className='img-fluid galleryImage' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'><img src={image5} className='img-fluid' alt="galleryImg" /></Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image4} className='img-fluid galleryImage' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'><img src={image4} className='img-fluid' alt="galleryImg" /></Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image1} className='img-fluid galleryImage' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'><img src={image1} className='img-fluid' alt="galleryImg" /></Col>
 
-                <Col md={3} sm={6} xs={12} className='m-0 p-0'><img src={image2} className='img-fluid galleryImage' alt="galleryImg" /></Col>
+                <Col md={3} sm={6} xs={12} className='m-0 p-0 galleryImg'><img src={image2} className='img-fluid' alt="galleryImg" /></Col>
             </Row>
         </Container>
     );
