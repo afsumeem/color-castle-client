@@ -24,7 +24,7 @@ const MenuBar = () => {
                             <NavLink to="/home" className="text-white fs-5 text-decoration-none mx-3 font-monospace menu-item">Home</NavLink>
                             <NavLink to="/about" className="text-white fs-5 text-decoration-none mx-3 font-monospace">About</NavLink>
                             <NavLink to="/service" className="text-white fs-5 text-decoration-none mx-3 font-monospace">Services</NavLink>
-                            {/* <NavLink to="/contact" className="text-white fs-5 text-decoration-none mx-3 font-monospace">Contact</NavLink> */}
+                            <NavLink to="/contact" className="text-white fs-5 text-decoration-none mx-3 font-monospace">Contact</NavLink>
 
                             {
                                 user?.email

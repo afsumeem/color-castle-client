@@ -1,0 +1,7 @@
+.contact-us-section{
+    background-image: url("../../images/cover-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.3;
+}
