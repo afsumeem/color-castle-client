@@ -2,7 +2,8 @@ import React from 'react';
 import { FloatingLabel, Form } from 'react-bootstrap';
 import Footer from '../shared/Footer/Footer';
 import MenuBar from '../shared/MenuBar/MenuBar';
-import './Contact.css'
+import './Contact.css';
+
 
 const Contact = () => {
     return (
