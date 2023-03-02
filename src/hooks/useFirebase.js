@@ -131,7 +131,7 @@ const useFirebase = () => {
 
         const users = { name: name, email: email };
 
-        fetch('https://color-castle-server.vercel.app/colorCastleUsers', {
+        fetch('https://color-castle-server.onrender.com/colorCastleUsers', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -144,7 +144,7 @@ const useFirebase = () => {
     // check admin
 
     useEffect(() => {
-        fetch(`https://color-castle-server.vercel.app/colorCastleUsers/${user.email}`)
+        fetch(`https://color-castle-server.onrender.com/colorCastleUsers/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])

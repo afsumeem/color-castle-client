@@ -20,7 +20,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        fetch(`https://color-castle-server.vercel.app/colorCastleServices/${id}`)
+        fetch(`https://color-castle-server.onrender.com/colorCastleServices/${id}`)
             .then(res => res.json())
             .then(data => setDetails(data))
     }, []);
@@ -28,7 +28,7 @@ const Details = () => {
     // handle submit
     const onSubmit = data => {
 
-        axios.post('https://color-castle-server.vercel.app/colorCastleOrders', data)
+        axios.post('https://color-castle-server.onrender.com/colorCastleOrders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Service Booked Successfully!!");

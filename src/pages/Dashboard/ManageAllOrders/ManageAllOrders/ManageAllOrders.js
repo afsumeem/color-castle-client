@@ -9,7 +9,7 @@ const ManageAllOrders = () => {
     // fetch all orders from api
 
     useEffect(() => {
-        fetch('https://color-castle-server.vercel.app/colorCastleOrders')
+        fetch('https://color-castle-server.onrender.com/colorCastleOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, []);

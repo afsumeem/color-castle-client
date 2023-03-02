@@ -9,7 +9,7 @@ const ManageProducts = () => {
     // fetch all brands from api
     useEffect(() => {
 
-        fetch('https://color-castle-server.vercel.app/colorCastleServices')
+        fetch('https://color-castle-server.onrender.com/colorCastleServices')
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, []);

@@ -11,7 +11,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
 
-        axios.post('https://color-castle-server.vercel.app/colorCastleReviews', data)
+        axios.post('https://color-castle-server.onrender.com/colorCastleReviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Review Added successfully");

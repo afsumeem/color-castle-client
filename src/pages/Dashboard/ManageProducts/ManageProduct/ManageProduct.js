@@ -16,7 +16,7 @@ const ManageProduct = ({ manage }) => {
 
     //delete product
     const handleDeleteProduct = id => {
-        const url = `https://color-castle-server.vercel.app/colorCastleServices/${id}`
+        const url = `https://color-castle-server.onrender.com/colorCastleServices/${id}`
 
         fetch(url, {
             method: 'DELETE'

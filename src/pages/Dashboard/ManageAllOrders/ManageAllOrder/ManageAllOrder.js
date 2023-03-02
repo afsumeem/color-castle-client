@@ -13,7 +13,7 @@ const ManageAllOrder = ({ allOrder }) => {
 
     // handle delete order from api
     const handleDeleteOrder = id => {
-        const url = `https://color-castle-server.vercel.app/colorCastleOrders/${id}`
+        const url = `https://color-castle-server.onrender.com/colorCastleOrders/${id}`
 
         fetch(url, {
             method: 'DELETE'
@@ -32,7 +32,7 @@ const ManageAllOrder = ({ allOrder }) => {
     const handleUpdateStatus = () => {
         const updated = { status: 'shipped' }
 
-        const url = `https://color-castle-server.vercel.app/colorCastleOrders/${_id}`
+        const url = `https://color-castle-server.onrender.com/colorCastleOrders/${_id}`
         fetch(url, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },

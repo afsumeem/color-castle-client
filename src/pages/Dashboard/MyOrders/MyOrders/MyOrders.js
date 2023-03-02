@@ -10,7 +10,7 @@ const MyOrders = () => {
     //fetch orders from API
 
     useEffect(() => {
-        fetch('https://color-castle-server.vercel.app/colorCastleOrders')
+        fetch('https://color-castle-server.onrender.com/colorCastleOrders')
             .then(res => res.json())
             .then(data => setMyOrders(data))
     }, []);
