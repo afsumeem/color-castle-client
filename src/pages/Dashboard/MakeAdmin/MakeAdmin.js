@@ -16,7 +16,7 @@ const MakeAdmin = () => {
         const user = { email };
 
 
-        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleUsers/admin', {
+        fetch('https://color-castle-server.vercel.app/colorCastleUsers/admin', {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(user)

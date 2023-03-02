@@ -25,7 +25,7 @@ const AddService = () => {
         formData.append('image', image);
         formData.append('image2', image2);
 
-        axios.post('https://stormy-woodland-90777.herokuapp.com/colorCastleServices', formData, {
+        axios.post('https://color-castle-server.vercel.app/colorCastleServices', formData, {
             headers: {
                 'accept': 'application/json',
                 'Accept-Language': 'en-US,en;q=0.8',

@@ -9,7 +9,7 @@ const ManageProducts = () => {
     // fetch all brands from api
     useEffect(() => {
 
-        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleServices')
+        fetch('https://color-castle-server.vercel.app/colorCastleServices')
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, []);

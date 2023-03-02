@@ -10,7 +10,7 @@ const MyOrders = () => {
     //fetch orders from API
 
     useEffect(() => {
-        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleOrders')
+        fetch('https://color-castle-server.vercel.app/colorCastleOrders')
             .then(res => res.json())
             .then(data => setMyOrders(data))
     }, []);

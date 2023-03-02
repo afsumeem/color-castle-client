@@ -20,7 +20,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        fetch(`https://stormy-woodland-90777.herokuapp.com/colorCastleServices/${id}`)
+        fetch(`https://color-castle-server.vercel.app/colorCastleServices/${id}`)
             .then(res => res.json())
             .then(data => setDetails(data))
     }, []);
@@ -28,7 +28,7 @@ const Details = () => {
     // handle submit
     const onSubmit = data => {
 
-        axios.post('https://stormy-woodland-90777.herokuapp.com/colorCastleOrders', data)
+        axios.post('https://color-castle-server.vercel.app/colorCastleOrders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Service Booked Successfully!!");

@@ -8,7 +8,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleServices')
+        fetch('https://color-castle-server.vercel.app/colorCastleServices')
             .then(res => res.json())
             .then(data => setServices(data.slice(0, 4)))
     }, []);

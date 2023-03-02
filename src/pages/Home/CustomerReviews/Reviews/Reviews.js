@@ -9,7 +9,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://stormy-woodland-90777.herokuapp.com/colorCastleReviews')
+        fetch('https://color-castle-server.vercel.app/colorCastleReviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, []);
